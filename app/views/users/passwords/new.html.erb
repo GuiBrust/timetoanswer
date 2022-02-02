@@ -1,0 +1,25 @@
+<div>
+  <a class="hiddenanchor" id="signin"></a>
+
+  <div class="login_wrapper">
+    <div class="animate form login_form">
+      <section class="login_content">
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+          <h1>Esqueceu a senha?</h1>
+          <div>
+            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>
+          </div>
+
+          <div>
+            <%= f.submit "Recuperar senha", class:"btn btn-success submit", style:"float: none; margin-left: 0px; " %>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="clearfix"></div>
+          <br/>
+
+        <% end %>
+      </section>
+    </div>
+  </div>
+</div>
