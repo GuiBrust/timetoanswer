@@ -60,8 +60,8 @@ group :development do
   gem 'rails_db', '>= 2.3.1'
   gem "capistrano", "~> 3.16", require: false
   gem 'capistrano-rvm'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rails'
+  gem 'capistrano-bundler', '~> 2.0'
+  gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano3-unicorn'
 end
 

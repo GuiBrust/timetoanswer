@@ -250,8 +250,8 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capistrano (~> 3.16)
-  capistrano-bundler
-  capistrano-rails
+  capistrano-bundler (~> 2.0)
+  capistrano-rails (~> 1.6)
   capistrano-rvm
   capistrano3-unicorn
   cocoon
